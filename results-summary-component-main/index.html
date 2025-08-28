@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Results summary component</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-[#ebf1ff] p-0 m-0">
+
+
+  <div class="w-[100%] sm:w-[100%] md:w-[650px] lg:w-[650px] mx-auto mt-0 sm:mt-0 md:mt-[100px] lg:mt-[100px] bg-transparent sm:bg-transparent md:bg-[white] lg:bg-[white] flex flex-col sm:flex-col md:flex-row lg:flex-row gap-1 rounded-[25px]">
+    <div class="flex flex-col items-center gap-3 bg-gradient-to-b p-5 w-full rounded-[0px_0px_25px] sm:rounded-[0px_0px_25px] md:rounded-[25px] lg:rounded-[25px] from-[#7857ff] via-[#2e2be9] to-[#4e21ca]">
+      <h1 class=" font-bold text-[#c8c7ff] text-xl w-full text-center">Your Result</h1>
+
+      <div class="flex flex-col items-center justify-center w-[150px] h-[150px] bg-[#2e2be9] rounded-full">
+        <h2 class="text-white text-6xl font-bold">76</h2>
+        <h3 class="text-gray-400 font-bold tracking-[1px]">of 100</h3>
+      </div>
+
+      <h1 class="font-bold text-white text-3xl w-full text-center">Great</h1>
+      <p class="text-center text-[#c8c7ff] text-[14px] w-[70%]">You scored higher than 65% of the people who have taken these tests.</p>
+    </div>
+
+    <div class="flex flex-col justify-between gap-3 w-full py-5 px-5">
+      <h1 class="text-[#303b5a] text-xl font-bold ">Summary</h1>
+
+      <ul class="flex flex-col gap-3">
+        <li class="py-2 px-4 flex items-center justify-between rounded-lg bg-[#ebf1ff]">
+          <div class="flex gap-1">
+            <img src="assets/images/icon-reaction.svg" alt="">
+            <h2 class="text-[#ff5757]">Reaction</h2>
+          </div>
+
+          <span class="text-[#303b5a] text-sm"><b>80</b> / 100</span>
+        </li>
+        
+        <li class="py-2 px-4 flex items-center justify-between rounded-lg bg-[#ebf1ff]">
+          <div class="flex gap-1">
+            <img src="assets/images/icon-memory.svg" alt="">
+            <h2 class="text-[#ffb01f]">Memory</h2>
+          </div>
+
+          <span class="text-[#303b5a] text-sm"><b>92</b> / 100</span>
+        </li>
+
+        <li class="py-2 px-4 flex items-center justify-between rounded-lg bg-[#ebf1ff]">
+          <div class="flex gap-1">
+            <img src="assets/images/icon-verbal.svg" alt="">
+            <h2 class="text-[#00bd91]">Verbal</h2>
+          </div>
+
+          <span class="text-[#303b5a] text-sm"><b>61</b> / 100</span>
+        </li>
+
+        <li class="py-2 px-4 flex items-center justify-between rounded-lg bg-[#ebf1ff]">
+          <div class="flex gap-1">
+            <img src="assets/images/icon-visual.svg" alt="">
+            <h2 class="text-[#1125d4]">Visual</h2>
+          </div>
+
+          <span class="text-[#303b5a] text-sm"><b>72</b> / 100</span>
+        </li>
+
+      </ul>
+
+      <button class="w-full rounded-full h-auto py-3 px-5 bg-[#303b5a] text-white font-bold cursor-pointer hover:bg-gradient-to-b hover:from-[#7857ff] hover:via-[#2e2be9] hover:to-[#4e21ca]">Continue</button>
+    </div>
+  </div>
+
+</body>
+
+</html>
